@@ -1,0 +1,17 @@
+{
+    "content_security_policy": "script-src 'self' https://www.8thsensus.com; object-src 'self'",
+    "manifest_version": 2,
+    "name": "8th Sensus",
+    "description": "Behavioral Security Authentication Browser Plugin",
+    "version": "1.0",
+  
+    "browser_action": {
+     "default_icon": "icon.png",
+     "default_popup": "popup.html"
+    },
+    "permissions": [
+     "activeTab",
+     "cookies",
+     "*://*.*.*"
+     ]
+  }
