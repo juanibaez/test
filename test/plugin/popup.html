@@ -1,0 +1,240 @@
+<!doctype html>
+<html>
+  <head>
+    <title>GTmetrix Analyzer</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/components-rounded.min.css" rel="stylesheet">
+    <link href="css/plugins.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/login.min.css" rel="stylesheet">
+    <style>
+        .content {
+            height: 420px;
+            overflow: auto;
+        }
+    </style>
+  </head> 
+  <body>
+    <div class="ibox-title">
+    <img src="img/8th-Sensus-logo.png" alt="8th Sensus">
+    </div>
+    <div class="ibox-content content">
+        <div id="account-information" class="wrapper wrapper-content animated fadeIn">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="tabs-container">
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li><a class="nav-link active" data-toggle="tab" href="#tab-1"> Account</a></li>
+                            <li><a class="nav-link" data-toggle="tab" href="#tab-2">Settings</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div role="tabpanel" id="tab-1" class="tab-pane active">
+                                <div class="panel-body">
+                                    <strong>Your Account</strong>
+                                    <form class="form-horizontal">
+                                        <div class="row m-t-lg">
+                                            <div class="form-group">
+                                                <table width="100%">
+                                                    <tr>
+                                                        <td>
+                                                            <label for="txt_fname" class="col-sm-2 control-label">First name:</label>
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" id="txt_fname" name="txt_fname" class="form-control" placeholder="First Name">
+                                                        </td>
+                                                        <td>
+                                                            <button type="button" class="btn btn-primary block full-width m-b" id="btn-update-name">Update</button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <label for="txt_fname" class="col-sm-2 control-label">Last name:</label>
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" id="txt_lname" name="txt_lname" class="form-control" placeholder="Last Name">
+                                                        </td>
+                                                        <td>
+                                                            <button type="button" class="btn btn-primary block full-width m-b" id="btn-update-name">Update</button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <label for="txt_fname" class="col-sm-2 control-label">Email:</label>
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" id="txt_email" name="txt_email" class="form-control" placeholder="EMail">
+                                                        </td>
+                                                        <td>
+                                                            <button type="button" class="btn btn-primary block full-width m-b" id="btn-update-name">Update</button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <label for="txt_fname" class="col-sm-2 control-label">Phone:</label>
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" id="txt_phone" name="txt_phone" class="form-control" placeholder="Phone">
+                                                        </td>
+                                                        <td>
+                                                            <button type="button" class="btn btn-primary block full-width m-b" id="btn-update-name">Update</button>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div role="tabpanel" id="tab-2" class="tab-pane">
+                                <div class="panel-body">
+                                    <strong>Your Settings</strong>
+
+                                    <p>Thousand unknown plants are noticed by me: when I hear the buzz of the little world among the stalks, and grow familiar with the countless indescribable forms of the insects
+                                        and flies, then I feel the presence of the Almighty, who formed us in his own image, and the breath </p>
+
+                                    <p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite
+                                        sense of mere tranquil existence, that I neglect my talents. I should be incapable of drawing a single stroke at the present moment; and yet.</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="create-account" class="middle-box text-center loginscreen animated fadeInDown">
+            <div>
+                </div class="text-center">
+                    <div class="register">
+                    <div id="connection_issue" class="alert alert-danger alert-dismissable">
+                        <p>
+                            <button aria-hidden="true" data-dismiss="alert" class="close" type="button">×</button>
+                            Application is currently not acessible at this time. Please try again later.
+                        </p>
+                    </div>
+                    <form action="#" class="customer-register-form">
+                        <div class="alert alert-danger display-hide error-modal-message">
+                            <button class="close" data-close="alert"></button> You have some form errors. Please check below.
+                        </div>
+                        <div class="alert alert-success display-hide error-modal-message">
+                            <button class="close" data-close="alert"></button> Your form validation is successful!
+                        </div>
+                        <div class="alert alert-warning error-modal-message" id="alert-signin-error" style="display: none;">
+                            <button class="close" data-close="alert"></button> <span id="signin-message"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="txt_new_fname" name="txt_new_fname" class="form-control" placeholder="First Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="txt_new_lname" name="txt_new_lname" class="form-control" placeholder="Last Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="txt_new_email" name="txt_new_email" class="form-control" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="txt_new_phone" name="txt_new_phone" class="form-control" placeholder="Phone">
+                        </div>
+                        <div class="form-group">
+                            <div class="checkbox i-checks"><label> <input type="checkbox" id="tnc" name="tnc" /><i></i> Agree to the terms and policy </label></div>
+                            <div id="register_tnc_error"> </div>
+                        </div>
+                        <button type="button" class="btn btn-primary block full-width m-b" id="btn-register">Register</button>
+                    </form>
+                </div>
+                <div id="registered">
+                    <h3>Thank you for registering 8th Sensus!</h3>
+                    <p>An email will be sent to you to confirm your email address.</p>
+                </div>
+                <p class="m-t"> <small><strong>Copyright © 8th Sensus</strong> 2020. All rights reserved.</small> </p>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/jquery.cookie.js" type="text/javascript"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/api/api.min.js" type="text/javascript"></script>
+    <!-- iCheck -->
+    <script src="js/plugins/form-validation/jquery.validate.min.js"></script>
+    <script src="js/plugins/form-validation/additional-methods.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/plugins/form-validation/form-validation.min.js"></script>
+    <!--<script src="js/popup.js"></script>-->
+
+<script>
+
+$(document).ready(function() {
+    $( "#registered" ).hide();
+    $( "#connection_issue" ).hide();
+
+
+    if (typeof $.cookie('sessionId') === 'undefined'){
+      $("#account-information").hide();
+      $("#create-account").show();
+    } else {
+      //checkEmailAddress($.cookie('sessionId'));
+      //$.removeCookie("email");
+    }
+
+    $("#btn-register").click(function () {
+        var formChecked = $(".customer-register-form").valid();
+
+        if (formChecked) {
+          var email = $('#txt_new_email').val();
+          var jsonObject = {
+              apiUrlEndpoint: '/consumer/account/create',
+              fName: $('#txt_new_fname').val(),
+              lName: $('#txt_new_lname').val(),
+              email: email,
+              phone: $('#txt_new_phone').val(),
+              product: '2'
+          }
+          
+          apiObject.postAPI(jsonObject).done(function(result){
+              if (JSON.stringify(result.status) == 200) {
+                  var session_id = result.data;
+                  alert(session_id);
+                  $( ".register" ).hide();
+                  $( "#registered" ).show();
+                  $.cookie("sessionId", session_id);
+                  alert($.cookie('sessionId'));
+              } else {
+                  $("#alert-signin-error").show();
+                  $('#signin-message').text(result.message);
+              }
+          });
+        }
+    });
+});
+
+function checkEmailAddress(email) {
+  var jsonObject = {
+      apiUrlEndpoint: '/app/pluggin/video/user/email/check',
+      email: email
+  }
+  
+  apiObject.getAPI(jsonObject).done(function(result){
+    alert(JSON.stringify(result.status));
+      if (JSON.stringify(result.status) == 200) {
+        $("#create-account").hide();
+        $("#account-information").show();
+      } else {
+        $("#account-information").hide();
+        $("#create-account").show();
+      }
+  });
+}
+
+
+
+
+
+
+</script>
+
+  </body>
+</html>
