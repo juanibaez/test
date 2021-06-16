@@ -868,9 +868,6 @@ h5 {
 .nav.navbar-right > li > a {
   color: #999c9e;
 }
-.nav > li.active > a {
-  color: #ffffff;
-}
 .navbar-default .nav > li > a:hover,
 .navbar-default .nav > li > a:focus {
   background-color: #293846;
@@ -4913,6 +4910,7 @@ code {
   border-style: solid solid none;
   border-width: 1px 0;
 }
+
 .ibox-footer {
   color: inherit;
   border-top: 1px solid #e7eaec;
@@ -9589,4 +9587,8 @@ tbody {
   position: relative;
   height: 300px;
   overflow: auto;
+}
+
+#barChart{
+  height: 58.3vh !important;
 }

@@ -34,7 +34,7 @@
                     <li> <a aria-expanded="false" href="./index.html"> Home</a></li>
                     <li> <a aria-expanded="false" href="./productivity.html">  Productivity (TBD)</a></li>
                     <li class="active"> <a aria-expanded="false" href="./logs.html"> Logs</a></li>
-                    <li> <a aria-expanded="false" href="./licenses.html"> Licences</a></li>
+                    <li> <a aria-expanded="false" href="./licenses.html"> Licenses</a></li>
 
                 </ul>
                 <ul class="nav navbar-top-links navbar-right">
@@ -64,7 +64,6 @@
                                     <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Local IP Address: activate to sort column ascending">Local IP Address</th>
                                     <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="GPS: activate to sort column ascending">GPS</th>
                                     <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Events: activate to sort column ascending">Events</th>
-                                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="confidence: activate to sort column ascending">confidence</th>
                                     <th class="sorting_desc" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="descending" aria-label="Date/Time: activate to sort column ascending">Date/Time</th>
                                 </tr>
                                 </thead>
@@ -142,14 +141,13 @@
                     { data: "localip" },
                     { data: "gps" },
                     { data: "diagcode" },
-                    { data: "confidence" },
                     { data: "stamp" },
                     { data: "key" },
                 ],
 
                 columnDefs: [
                     {
-                        "targets": [ 9 ],
+                        "targets": [ 8 ],
                         "visible": false,
                         "searchable": false
                     }
