@@ -58,9 +58,9 @@
                                 <thead>
                                 <tr role="row">
                                     <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="User ID: activate to sort column ascending" style="width: 40px;">User ID</th>
-                                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Machine Name: activate to sort column ascending" style="width: 56px;">Machine Name</th>
+                                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Machine Name: activate to sort column ascending" style="width: 56px;">Number of Assets</th>
                                     <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="MAC Address: activate to sort column ascending" style="width: 63px;">Version</th>
-                                    <th class="sorting_desc" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="descending" aria-label="Date/Time: activate to sort column ascending" style="width: 102px;">License Expiration Date</th>
+                                    <th class="sorting_desc" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="descending" aria-label="Date/Time: activate to sort column ascending" style="width: 102px;">License</th>
                                 </tr>
                                 </thead>
                             </table>
@@ -123,7 +123,7 @@
         data: {
         },
         success: function (result) {
-            assets = alasql("SELECT UPPER(userid) as userid , COUNT(DISTINCT machinename) as machinename, MAX(version) as version, MAX(stamp) as stamp FROM ? GROUP BY UPPER(userid)",[result]);
+            assets = alasql("SELECT UPPER(userid) as userid , COUNT(DISTINCT machinename) as machinename, MAX(version) as version, MAX(customerid) as stamp FROM ? GROUP BY UPPER(userid)",[result]);
             console.log(assets);
 
             //alert(JSON.stringify(result));
